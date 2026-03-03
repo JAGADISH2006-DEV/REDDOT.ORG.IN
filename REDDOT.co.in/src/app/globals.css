@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 8, 8, 8;
+  /* Obsidian Black #080808 */
+  --background-end-rgb: 8, 8, 8;
+  --primary-color: 255, 140, 0;
+  /* Vibrant Orange #FF8C00 */
+  --secondary-color: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #080808;
+  font-family: 'Inter', sans-serif;
+}
+
+::selection {
+  background-color: rgba(255, 140, 0, 0.3);
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(var(--secondary-color));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-dot-pattern {
+    background-image: radial-gradient(circle at 1px 1px, rgb(50 50 50) 1px, transparent 0);
+    background-size: 40px 40px;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+}

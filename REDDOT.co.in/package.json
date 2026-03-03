@@ -1,0 +1,45 @@
+{
+  "name": "reddot-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/three": "^0.182.0",
+    "axios": "^1.12.2",
+    "clsx": "^2.1.1",
+    "firebase": "^10.0.0",
+    "firebase-admin": "^12.0.0",
+    "framer-motion": "^11.18.2",
+    "groq-sdk": "^0.5.0",
+    "gsap": "^3.14.2",
+    "lucide-react": "^0.379.0",
+    "mongodb": "^6.20.0",
+    "next": "^15.0.0",
+    "nodemailer": "^7.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^3.4.0",
+    "three": "^0.182.0",
+    "typescript": "^5.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^4.0.7",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^15.0.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0"
+  }
+}
